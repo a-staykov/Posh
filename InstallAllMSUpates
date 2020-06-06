@@ -1,0 +1,3 @@
+pushd "%~dp0"
+for /f %%a in ('dir *.cab /b') do (DISM /online /add-package /packagepath:"%%a")
+pause
